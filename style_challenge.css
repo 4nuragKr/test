@@ -1,0 +1,174 @@
+/* global reset */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* GENERAL */
+body {
+  font-family: sans-serif;
+  /* color: #333; */
+  line-height: 1.4;
+}
+
+/* centering everything */
+.container {
+  width: 825px;
+  margin: 0 auto;
+}
+
+/* EACH ARTICLE */
+article {
+  border: solid #000 5px;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+
+/* SALE TAG */
+.sale-tag {
+  background-color: red;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 7px 15px;
+
+  display: inline- block;
+  /* setting the above display property is not compulsory as the position absolute is doing something to manage it. */
+  position: absolute;
+  top: -17px;
+  left: -34px;
+}
+
+/* PRODUCT NAME */
+article header {
+  font-size: 14px;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* PRODUCT PRICE*/
+.price {
+  font-size: 24px;
+}
+.subtle {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.punch-line {
+  margin-bottom: 8px;
+}
+
+/* PRODUCT DETAILS */
+
+h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.product-details {
+  list-style: square;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.more-info-link {
+  margin-bottom: 20px;
+}
+
+.more-info-link a:link,
+.more-info-link a:visited {
+  color: #000;
+}
+
+.more-info-link a:hover,
+.more-info-link a:active {
+  text-decoration: none;
+}
+
+/* CHOOSE COLORS  */
+
+.colors {
+  margin-bottom: 18px;
+}
+
+.colors div:first-child {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  margin-right: 8px;
+}
+
+.colors div:nth-child(2) {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(0, 0, 255);
+  margin-right: 8px;
+}
+
+.colors div:nth-child(3) {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  margin-right: 8px;
+}
+
+.colors div:nth-child(4) {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: orange;
+  margin-right: 8px;
+}
+
+.colors div:nth-child(5) {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: greenyellow;
+  margin-right: 8px;
+}
+
+.colors div:nth-child(6) {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: brown;
+  margin-right: 8px;
+}
+
+/* ADD TO CART  */
+.add-cart {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  border: 0;
+  border-top: solid #000 5px;
+  padding: 10px;
+}
+
+.add-cart:hover {
+  background-color: #fff;
+  color: #000;
+}

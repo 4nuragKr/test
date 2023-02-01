@@ -1,0 +1,283 @@
+* {
+  /* The universal selector selects all the elements .
+  It has the lowest specificity 
+  It simply applies to all the elements
+  There is no inheritance involved
+  Perfect if we want to apply a property that doesn't get inherited using the body  */
+
+  /* doing global reset */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgba(151, 154, 252, 0.416);
+  color: #444;
+  border-top: 10px solid #1098ad;
+}
+
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */ /*If i don't comment it then the change made to display property of nav links to block (from inline) will show a weird output as the links will move out of the header! as the header won't adjust itself*/
+}
+
+nav {
+  font-size: 18px;
+  /* text-align: center; */
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+  /* position: relative; */
+}
+
+aside {
+  background-color: #f7f7f7;
+  /* border: 5px solid #1098ad; */
+  border-bottom: 5px solid #1098ad;
+  border-top: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+/* SMALLER ELEMENTS */
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+  /* color: #1098ad; */
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20;
+  margin-bottom: 10px;
+  /* display: inline; */
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* footer p {
+  font-size: 16px;
+} */
+
+/* artilcle header p {
+  font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.related {
+  list-style: none;
+}
+
+/* Below one is pseudo class ! */
+
+li:first-child {
+  font-weight: bold;
+  font-style: italic;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* li:nth-child(3) {
+  color: red;
+} */
+
+/* selecting the first p of the article using descendant selector as well as psuedo class! */
+
+/* artice p:first-child 
+  color: red;
+} */
+
+/* HAHA !! the above code doesn't work . Because that's not how pseudo class works! (p is not the first child of article)*/
+
+/* BUT the below code will work! */
+
+/* article p:last-child {
+  color: red;
+} */
+
+/* This worked because the p element is indeed the last element of the article!  */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline blue;
+}
+
+a:active {
+  background: black;
+  font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px; /* This won't apply untill we change the display property to inline-block from inline (which is the default for a tags) */
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  /* top: 50px;
+  left: 50px; */
+  bottom: 50px;
+  right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h2::first-letter {
+  font-size: 80px;
+} */
+
+/* p::first-line {
+  color: red;
+} */
+
+/* Using adjacent sibling selector below */
+h3 + p::first-line {
+  /* color: red; */
+}
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+/* Resolving conflicts (testing what happens)*/
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+} */
+
+/* testing ends */
