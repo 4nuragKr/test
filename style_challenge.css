@@ -2,6 +2,8 @@
 * {
   padding: 0;
   margin: 0;
+
+  box-sizing: border-box;
 }
 
 /* GENERAL */
@@ -53,6 +55,10 @@ article header {
 h2 {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/* PRODUCT IMG */
+.product-img {
 }
 
 /* PRODUCT PRICE*/
@@ -171,4 +177,37 @@ li {
 .add-cart:hover {
   background-color: #fff;
   color: #000;
+}
+
+/* FLOATS */
+.product-img {
+  float: left;
+}
+
+.middle {
+  width: 240px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.details {
+  float: left;
+  width: 240px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.price {
+  float: left;
+  margin-bottom: 25px;
+}
+
+.subtle {
+  float: right;
+  margin-top: 7px;
+}
+
+.punch-line {
+  clear: both;
 }
