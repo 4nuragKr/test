@@ -114,7 +114,7 @@ li {
 }
 
 .colors div:first-child {
-  display: inline-block;
+  /* display: inline-block; */
   height: 20px;
   width: 20px;
   background-color: #000;
@@ -130,7 +130,7 @@ li {
 }
 
 .colors div:nth-child(3) {
-  display: inline-block;
+  /* display: inline-block; */
   height: 20px;
   width: 20px;
   background-color: red;
@@ -146,7 +146,7 @@ li {
 }
 
 .colors div:nth-child(5) {
-  display: inline-block;
+  /* display: inline-block; */
   height: 20px;
   width: 20px;
   background-color: greenyellow;
@@ -154,7 +154,7 @@ li {
 }
 
 .colors div:nth-child(6) {
-  display: inline-block;
+  /* display: inline-block; */
   height: 20px;
   width: 20px;
   background-color: brown;
@@ -180,7 +180,7 @@ li {
 }
 
 /* FLOATS */
-.product-img {
+/* .product-img {
   float: left;
 }
 
@@ -210,4 +210,59 @@ li {
 
 .punch-line {
   clear: both;
+} */
+
+/* FLEXBOX */
+
+/* .row {
+  display: flex;
+  flex: 1;
+  gap: 40px;
+} */
+
+.details {
+  /* flex-grow: 2; */
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.subtle {
+  margin-bottom: 0;
+}
+
+.colors {
+  display: flex;
+  /* now i comment all the codes to make the inside color divs to inline block! */
+}
+
+.middle {
+  /* flex: 1; */
+  margin-top: 15px;
+}
+
+.details {
+  /* flex: 1; */
+  margin-top: 15px;
+}
+
+/* CSS-GRID */
+
+article {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+  /* row-gap: 15px; */
+}
+
+.article-header {
+  grid-column: 1 / -1;
+}
+
+.add-cart {
+  grid-column: 1 / -1;
 }

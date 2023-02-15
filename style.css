@@ -36,7 +36,8 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px;  Commenting after writing css-grid code */
+
   /* height: 80px; */ /*If i don't comment it then the change made to display property of nav links to block (from inline) will show a weird output as the links will move out of the header! as the header won't adjust itself*/
 }
 
@@ -46,7 +47,7 @@ nav {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */ /*Commenting after writing css-grid code */
 }
 
 .post-header {
@@ -368,6 +369,9 @@ footer {
   font-style: italic;
 }
 
+/* FLEXBOX LAYOUT */
+
+/* 
 .row {
   display: flex;
   gap: 75px;
@@ -376,12 +380,29 @@ footer {
 }
 
 article {
-  /* flex: 0 0 825px; */
-  /* why to do the above maths, just let flexbox decide and grow the article to fit the space. */
+  flex: 0 0 825px;
+  why to do the above maths, just let flexbox decide and grow the article to fit the space.
   flex: 1;
   margin-bottom: 0;
 }
 
 aside {
   flex: 0 0 300px;
+} */
+
+/* CSS GRID */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+.footer {
+  grid-column: 1 / -1;
 }
